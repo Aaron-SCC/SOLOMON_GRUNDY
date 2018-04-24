@@ -1,0 +1,134 @@
+﻿
+<!-- COMMENTS HERE -->
+<!-- 
+NAME: Aaron Lewis 
+Apr 11 2018
+Class: WEB150 : Intro To JavaScript 
+Spring 2018 Quarter 
+ASSIGNMENT: 03 
+
+123456789 123456789 123456789 123456789 123456789 123456789 123456789 
+
+Convert number grades to letter grades
+This exercise will give you some practice using if statements. 
+To start, this application should display a prompt dialog box that 
+gets a number grade from 0 through 100. 
+
+Result:
+Display an alert dialog box like the one below that displays the 
+letter grade for that number, for example:
+
+To derive the letter grade, you should use this table:
+A	88-100
+B	80-87
+C	68-79
+D	60-67
+F	< 60
+If user enters 999 - “Good bye”
+
+*Assume that the user has entered a valid entry.  
+*This version of the program does not need to support multiple entries.
+ 
+
+
+
+-->
+
+<!DOCTYPE  HTML  >
+<html>
+
+    <head>
+        
+    </head>
+
+    <body>
+
+        
+        
+        
+    <script>
+        // first javascript example
+        // declare variable for the Date object
+        
+        
+// BODY OF CODE FOR ASSIGNMENT    BEGINS HERE
+// BODY OF CODE FOR ASSIGNMENT    BEGINS HERE
+// BODY OF CODE FOR ASSIGNMENT    BEGINS HERE
+        // put newlines between greeting USER NAME PROMPT entry
+        
+        // create PROMT to have USER type in grade number
+        var gradeNumberString = prompt("CONVERT Number GRADE to Letter GRADE \n" +
+                               "Please enter integer number grade from 0 through 100:  ", "<number goes here>");
+                
+        var gradeNumber = parseInt(gradeNumberString ); // convert input of string type to number
+
+        var gradeLetter = "A";
+
+        //Good bye = 999
+        //A	88-100
+        //B	80-87
+        //C	68-79
+        //D	60-67
+        //F	< 60        
+        //        
+        if (gradeNumber==999){
+            gradeLetter = "Good bye";
+        } else if ( gradeNumber >= 88 && gradeNumber <= 100 )  {
+            gradeLetter = "A";
+        } else if ( gradeNumber >= 80 && gradeNumber <=  87 )  {
+            gradeLetter = "B";
+        } else if ( gradeNumber >= 68 && gradeNumber <=  79 )  {
+            gradeLetter = "C";
+        } else if ( gradeNumber >= 60 && gradeNumber <=  67 )  {
+            gradeLetter = "D";
+        } else if ( gradeNumber <= 59 ){
+            gradeLetter = "F";
+        } else { // DEFAULT STATE 
+            gradeLetter = "F";
+        }
+        
+        // display Entered in Number Grade and resulting Letter Grade
+        // best guessed the spaces below in order to meet 
+        // assignment screenshot spec of being centered aligned text in alert box//
+//        alert("                                        Number Grade = " + gradeNumber + "\n" +
+//              "                                        Letter Grade = " + gradeLetter + "\n");
+        // spaces good for Chrome but not Firefox
+        // Firebox auto-centers text in alert box
+        // Chrome does not, left aligned
+        alert("Number Grade = " + gradeNumber + "\n" +
+              "Letter Grade = " + gradeLetter + "\n");
+        
+        ls;
+                
+        
+        
+    </script>
+        
+    </body>
+        
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
